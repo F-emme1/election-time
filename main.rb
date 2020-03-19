@@ -41,10 +41,11 @@ until i == 11
   i += 1 
 end 
 
-puts "For Donna Summers - #{vote.count("donna summers")}\n\n "
+puts "For Donna Summers - #{vote.count("donna summers") }\n\n "
 puts "For Cher - #{vote.count("cher")}\n\n"
 puts "For Diana Ross- #{vote.count("diana ross")}\n\n"
 
 puts "The winner of the election is: #{vote.max_by{|i| vote.count(i)} }"
+#missing count for winner on print total
 
   #Output: Print the total votes cast as well as the winner of the election
